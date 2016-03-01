@@ -90,3 +90,33 @@ puts array
 
 Answer to part 2 of this question is to add the line
 puts array.join
+
+
+---
+Additional comments
+
+This is true, but let's make this Ruby specific -- let's say I have a grocery list. Is there any reason for me to use ["Milk", "Eggs", 
+"Vegetables"] instead of "Milk, Eggs, Vegetables" (i.e. an array instead of a string)? If so, what might that be?
+
+I guess I don't see a difference between an array or a string. If you wanted to add an item, it would be easy enough to do so for each. 
+If you wanted to delete an item, it might be marginally easier to do so with the array. 
+But I sense that I am still missing something here that you are trying to convey.
+
+
+> +If there isn't an element in the X position, it will simply return a blank space there
+If there isn't an element in the X position, it will simply return a blank space there
+More correctly, it'll return nil
+
+Just to be clear I am not seeing the word 'nil' appear, it is merely a blank space/line/row.
+
+
+ # How would you perform an operation on every element inside an Array?
+  
+ -Replace me with your response...
+ +Using the .each method
+Great! Now give me an example.
+
+alpha.each {|x| print x, " -- " }
+will print each element in alpha, separated by "--"
+
+
